@@ -1,11 +1,28 @@
 @color-link: #00a497;
 @color-link-hover: lighten(@color-link, 10%);
 
+body {
+    width:100%;
+    max-width:800px;
+    margin: 16px auto;}
+
 a{
 	text-decoration:none;
 	color:@color-link;
     &:hover{
         color:@color-link-hover;
+    }
+}
+
+img {
+    max-width:100%;
+    
+}
+
+#Label1 {
+    span {
+        display:inline-block;
+        padding: 2px;
     }
 }
 
