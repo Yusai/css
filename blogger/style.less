@@ -4,7 +4,13 @@
 body {
     width:100%;
     max-width:800px;
-    margin: 16px auto;}
+    margin: 32px auto;
+    padding: 8px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 a{
 	text-decoration:none;
@@ -16,7 +22,41 @@ a{
 
 img {
     max-width:100%;
-    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.right {
+    text-align: right;
+}
+
+.description {
+    .small;
+    .right;
+}
+
+.date-header {
+    .small;
+}
+
+.post-title {
+    padding-left: 1em;
+}
+
+.post-labes {
+    a {
+        color: white;
+        background: black;
+        .bold;
+        border-radius: 2px;
+        padding: 2px 8px;
+    }
 }
 
 #Label1 {
@@ -25,5 +65,3 @@ img {
         padding: 2px;
     }
 }
-
-.post-title {}
