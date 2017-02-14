@@ -6,6 +6,7 @@ body {
     max-width:800px;
     margin: 0 auto;
     padding: 32px 8px;
+    line-height: 1.5em;
 }
 
 *, *:before, *:after {
@@ -74,6 +75,27 @@ img {
     margin-right: 0 !important;
 }
 
+.blog-pager {
+    text-align: center;
+    > *{
+        padding: 3px 8px;
+        margin: 1px;
+        border-radius: 2px;
+    }
+    a {
+        background: #2a4073;
+        color: white;
+    }
+    .home-link {
+        background: #e83929;
+    }
+}
+
+.blog-feeds {
+    text-align: right;
+    .small;
+}
+
 #ArchiveList .collapsed > ul {
     display: none;
 }
@@ -84,9 +106,13 @@ img {
         padding: 3px 8px;
         margin: 1px;
         border-radius: 2px;
-        background: black;
+        background: #00a3af;
         a {
             color: white;
         }
     }
+}
+
+.widget-item-control {
+    display: none;
 }
